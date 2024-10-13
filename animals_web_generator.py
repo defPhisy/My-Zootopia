@@ -27,10 +27,14 @@ def get_animal_specs(json: dict) -> str:
         location = animal["locations"][0]
         animal_type = animal["characteristics"].get("type")
         output += (
-            f"Name: {name}\n" + f"Diet: {diet}\n" + f"Location: {location}\n"
+            f"<li class='cards__item'>Name: {name}<br>"
+            + f"Diet: {diet}<br>"
+            + f"Location: {location}"
         )
         if animal_type:
-            output += f"Type: {animal_type.capitalize()}\n"
+            output += f"<br>Type: {animal_type.capitalize()}</li>"
+        else:
+            output += "</li>"
     return output
 
 
