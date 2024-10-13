@@ -28,19 +28,21 @@ def get_animal_specs(json: dict) -> str:
         animal_type = animal["characteristics"].get("type")
 
         output += get_html_serialization(name, diet, location, animal_type)
+
     return output
 
 
 def get_html_serialization(name, diet, location, animal_type):
     output = "<li class='cards__item'>\n"
     output += f"<div class='card__title'>{name}</div>\n"
-    output += "<p class='card__text'>\n"
-    output += f"<strong>Location:</strong> {location}<br/>\n"
+    output += "<div class='card__text'>\n"
+    output += "<ul>\n"
+    output += f"<li><strong>Location:</strong> {location}</li>\n"
 
     if animal_type:
-        output += f"<strong>Type:</strong> {animal_type}<br/>\n"
+        output += f"<li><strong>Type:</strong> {animal_type}</li>\n"
 
-    output += f"<strong>Diet:</strong> {diet}<br/></p></li>"
+    output += f"<li><strong>Diet:</strong> {diet}</li></ul></div></li>"
 
     return output
 
