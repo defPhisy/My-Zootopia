@@ -9,8 +9,8 @@ def main():
     with open("animals_template.html", "r") as handle:
         html_template = handle.read()
 
-    # get animal specs as string
-    animal_specs: str = get_animal_specs(json_data)
+    animal_specs = get_animal_specs(json_data)
+
     # replace placeholder in html template with new animal specs
     new_html = html_template.replace("__REPLACE_ANIMALS_INFO__", animal_specs)
 
@@ -26,15 +26,29 @@ def get_animal_specs(json: dict) -> str:
         diet = animal["characteristics"]["diet"]
         location = animal["locations"][0]
         animal_type = animal["characteristics"].get("type")
-        output += (
-            f"<li class='cards__item'>Name: {name}<br>"
-            + f"Diet: {diet}<br>"
-            + f"Location: {location}"
+
+        html_li_animal = get_html_serialization(
+            name, diet, location, animal_type
         )
-        if animal_type:
-            output += f"<br>Type: {animal_type.capitalize()}</li>"
-        else:
-            output += "</li>"
+        output += html_li_animal
+    return output
+
+
+def get_html_serialization(name, diet, location, animal_type):
+    output = f"""
+<li class="cards__item">
+    <div class="card__title">{name}</div>
+    <p class="card__text">
+        <strong>Location:</strong> {location}<br/>"""
+    
+    if animal_type:
+        output += f"""
+        <strong>Type:</strong> {animal_type}<br/>"""
+
+    output += f"""
+        <strong>Diet:</strong> {diet}<br/>
+    </p>
+</li>"""
     return output
 
 
