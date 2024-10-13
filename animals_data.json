@@ -10,9 +10,7 @@
       "genus": "Canis",
       "scientific_name": "Canis lupus"
     },
-    "locations": [
-      "North-America"
-    ],
+    "locations": ["North-America"],
     "characteristics": {
       "distinctive_feature": "Long legs and wide, flat ears",
       "temperament": "Mix of affectionate, loving, and stubborn",
@@ -39,11 +37,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes lagopus"
     },
-    "locations": [
-      "Eurasia",
-      "Europe",
-      "North-America"
-    ],
+    "locations": ["Eurasia", "Europe", "North-America"],
     "characteristics": {
       "main_prey": "Lemmings, voles, hares, other small rodents, berries, insects",
       "name_of_young": "kit",
@@ -75,9 +69,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes vulpes"
     },
-    "locations": [
-      "North-America"
-    ],
+    "locations": ["North-America"],
     "characteristics": {
       "prey": "Birds, small mammals, insects, spiders, worms, reptiles",
       "name_of_young": "Cub, pup, kit",
@@ -114,9 +106,7 @@
       "genus": "Lycalopex",
       "scientific_name": "Lycalopex fulvipes"
     },
-    "locations": [
-      "South-America"
-    ],
+    "locations": ["South-America"],
     "characteristics": {
       "prey": "Small mammals, reptiles, insects and other invertebrates",
       "name_of_young": "Pup, cub, kit",
@@ -153,9 +143,7 @@
       "genus": "Canis",
       "scientific_name": "Canis lupus"
     },
-    "locations": [
-      "Europe"
-    ],
+    "locations": ["Europe"],
     "characteristics": {
       "temperament": "Friendly, independent, affectionate",
       "diet": "Omnivore",
@@ -176,10 +164,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes zerda"
     },
-    "locations": [
-      "Africa",
-      "Asia"
-    ],
+    "locations": ["Africa", "Asia"],
     "characteristics": {
       "prey": "Berries, Fruit, Rodents, Reptiles",
       "name_of_young": "Kit",
@@ -218,13 +203,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes vulpes"
     },
-    "locations": [
-      "Africa",
-      "Asia",
-      "Eurasia",
-      "Europe",
-      "North-America"
-    ],
+    "locations": ["Africa", "Asia", "Eurasia", "Europe", "North-America"],
     "characteristics": {
       "main_prey": "Rabbits, Birds, Lizards",
       "distinctive_feature": "Pointed ears and long bushy tail",
@@ -255,9 +234,7 @@
       "genus": "Pantherophis",
       "scientific_name": "P. vulpinus and P. ramspotti"
     },
-    "locations": [
-      "North-America"
-    ],
+    "locations": ["North-America"],
     "characteristics": {
       "prey": "Mice, rats, young rabbits, ground-nesting birds and sometimes their eggs, frogs, lizards",
       "main_prey": "Mice and birds",
@@ -290,10 +267,7 @@
       "genus": "Sciurus",
       "scientific_name": "Sciurus niger"
     },
-    "locations": [
-      "Central-America",
-      "North-America"
-    ],
+    "locations": ["Central-America", "North-America"],
     "characteristics": {
       "prey": "Insects, bird eggs",
       "name_of_young": "Juveniles",
@@ -331,9 +305,7 @@
       "genus": "Canis",
       "scientific_name": "Canis Lupus"
     },
-    "locations": [
-      "Europe"
-    ],
+    "locations": ["Europe"],
     "characteristics": {
       "diet": "Omnivore",
       "common_name": "Fox Terrier",
@@ -355,9 +327,7 @@
       "genus": "Acerodon",
       "scientific_name": "Acerodon jubatus"
     },
-    "locations": [
-      "Asia"
-    ],
+    "locations": ["Asia"],
     "characteristics": {
       "name_of_young": "Pup",
       "group_behavior": "Group",
@@ -390,11 +360,7 @@
       "genus": "Urocyon",
       "scientific_name": "Urocyon cinereoargenteus"
     },
-    "locations": [
-      "Central-America",
-      "North-America",
-      "South-America"
-    ],
+    "locations": ["Central-America", "North-America", "South-America"],
     "characteristics": {
       "prey": "Rodents, birds, insects, and fruit",
       "name_of_young": "Pups or kits",
@@ -433,10 +399,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes macrotis merriam"
     },
-    "locations": [
-      "Central-America",
-      "North-America"
-    ],
+    "locations": ["Central-America", "North-America"],
     "characteristics": {
       "prey": "kangaroo rat, cottontail, jackrabbit, reptiles, insects, birds",
       "name_of_young": "pup",
@@ -475,9 +438,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes vulpes"
     },
-    "locations": [
-      "North-America"
-    ],
+    "locations": ["North-America"],
     "characteristics": {
       "prey": "Rodents, birds, reptiles, insects, and more",
       "name_of_young": "Kits",
@@ -517,13 +478,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes vulpes"
     },
-    "locations": [
-      "Africa",
-      "Asia",
-      "Europe",
-      "North-America",
-      "Oceania"
-    ],
+    "locations": ["Africa", "Asia", "Europe", "North-America", "Oceania"],
     "characteristics": {
       "prey": "Rabbits, mice, voles, birds, frogs, fish, eggs, and fruits and vegetables",
       "name_of_young": "Kits or pups",
@@ -563,9 +518,7 @@
       "genus": "Canis",
       "scientific_name": "Canis lupus"
     },
-    "locations": [
-      "Europe"
-    ],
+    "locations": ["Europe"],
     "characteristics": {
       "temperament": "Energetic and curious",
       "diet": "Omnivore",
@@ -586,9 +539,7 @@
       "genus": "Vulpes",
       "scientific_name": "Vulpes ferrilata"
     },
-    "locations": [
-      "Asia"
-    ],
+    "locations": ["Asia"],
     "characteristics": {
       "main_prey": "pikas, marmots, rodents, lizards, and other small prey",
       "name_of_young": "Kits",
@@ -625,9 +576,7 @@
       "genus": "Canis",
       "scientific_name": "Canis lupus"
     },
-    "locations": [
-      "North-America"
-    ],
+    "locations": ["North-America"],
     "characteristics": {
       "temperament": "Intelligent, friendly, alert, playful, loyal, spirited",
       "diet": "Omnivore",
@@ -648,9 +597,7 @@
       "genus": "Canis",
       "scientific_name": "Canis lupus"
     },
-    "locations": [
-      "Europe"
-    ],
+    "locations": ["Europe"],
     "characteristics": {
       "temperament": "Alert, friendly, and confident",
       "diet": "Omnivore",
