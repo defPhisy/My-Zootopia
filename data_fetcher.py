@@ -10,7 +10,7 @@ def get_animals():
 
 
 def ask_for_animal():
-    return input("Animal: ")
+    return input("Enter a name of an animal: ")
 
 
 def fetch_animals(animal: str):
@@ -20,6 +20,6 @@ def fetch_animals(animal: str):
     if not response:
         return "No animals found"
     elif response.status_code == requests.codes.ok:
-        return response
+        return response.json()
     else:
         return "Error:", response.status_code, response.text
