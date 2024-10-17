@@ -1,10 +1,9 @@
-import json
+from data_fetcher import get_animals
 
 
 def main():
     # read json and html template
-    with open("animals_data.json", "r") as handle:
-        json_data = json.loads(handle.read())
+    json_data = get_animals()
 
     with open("animals_template.html", "r") as handle:
         html_template = handle.read()
@@ -16,10 +15,17 @@ def main():
 
     # write modified html template to new file
     with open("animals.html", "w") as handle:
-        handle.write(new_html)
+        try:
+            handle.write(new_html)
+        except Exception as error:
+            print(error)
+        else:
+            print(
+                "Website was successfully generated to the file animals.html."
+            )
 
 
-def get_animal_specs(json: dict) -> str:
+def get_animal_specs(json: list) -> str:
     output = ""
     for animal in json:
         name = animal["name"]
