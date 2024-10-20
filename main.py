@@ -2,7 +2,8 @@ from data_fetcher import get_animals
 import json
 
 
-def main():
+def main() -> None:
+    """Small cli script to search for animals and list them in a simple html file."""
     # read json and html template
     with open("animals_template.html", "r") as handle:
         html_template = handle.read()
@@ -23,7 +24,8 @@ def main():
     save_file(new_html)
 
 
-def save_file(new_html):
+def save_file(new_html) -> None:
+    """Save generated html in root folder as 'animals.html'"""
     with open("animals.html", "w") as handle:
         try:
             handle.write(new_html)
@@ -36,6 +38,7 @@ def save_file(new_html):
 
 
 def get_animal_specs(json) -> str:
+    """Get animal specs from json and return html serialized format"""
     output = ""
     for animal in json:
         name = animal["name"]
@@ -48,7 +51,8 @@ def get_animal_specs(json) -> str:
     return output
 
 
-def get_html_serialization(name, diet, location, animal_type):
+def get_html_serialization(name, diet, location, animal_type) -> str:
+    """Convert given animal specs to html format"""
     output = "<li class='cards__item'>\n"
     output += f"<div class='card__title'>{name}</div>\n"
     output += "<div class='card__text'>\n"
@@ -64,6 +68,7 @@ def get_html_serialization(name, diet, location, animal_type):
 
 
 def get_html_message(message) -> str:
+    """Forwards message from API if nothing is found or an error ocurred."""
     if "Error" in message[0]:
         output = json.loads(message[-1])
         output = output["error"].capitalize()
